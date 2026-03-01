@@ -23,10 +23,12 @@ turned off in modern Minecraft.)
 
 ## What this is not
 
-* _Matching_ decompilation goes one step further and produces source code that actually compiles to the exact same machine
+- **The recently-leaked Minecraft PE 0.6.1 source code**.
+
+- A _matching_ decompilation goes one step further and produces source code that actually compiles to the exact same machine
   code, byte for byte. **Although it would be nice, this is not one of those.**
 
-* A reimplementation of the Java side of the MCPE APK.
+- A reimplementation of the Java side of the MCPE APK.
 
 
 
