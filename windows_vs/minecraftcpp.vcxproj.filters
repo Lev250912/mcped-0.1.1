@@ -1050,6 +1050,15 @@
     <ClCompile Include="..\source\client\particle\LavaParticle.cpp">
       <Filter>Source Files\client\particle</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\client\gui\components\ImageButton.cpp">
+      <Filter>Source Files\client\gui\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\client\gui\components\LargeImageButton.cpp">
+      <Filter>Source Files\client\gui\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\client\gui\components\BuyButton.cpp">
+      <Filter>Source Files\client\gui\components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\thirdparty\raknet\UDPProxyServer.h">
@@ -2062,6 +2071,18 @@
     </ClInclude>
     <ClInclude Include="..\source\client\particle\ParticleEngine.hpp">
       <Filter>Source Files\client\particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\client\gui\components\ImageDef.hpp">
+      <Filter>Source Files\client\gui\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\client\gui\components\ImageButton.hpp">
+      <Filter>Source Files\client\gui\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\client\gui\components\LargeImageButton.hpp">
+      <Filter>Source Files\client\gui\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\client\gui\components\BuyButton.hpp">
+      <Filter>Source Files\client\gui\components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -40,7 +40,7 @@
 //#define TEST_DROPPED_ITEMS      // Allow dropped items to be dropped and collected.
 
 // Toggle Demo Mode
-#define DEMO
+//#define DEMO
 
 // Enable Debug Mode
 #define MC_DEBUG

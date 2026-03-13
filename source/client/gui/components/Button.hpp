@@ -1,7 +1,7 @@
 /********************************************************************
 	Minecraft: Pocket Edition - Decompilation Project
 	Copyright (C) 2023 iProgramInCpp
-	
+
 	The following code is licensed under the BSD 1 clause license.
 	SPDX-License-Identifier: BSD-1-Clause
  ********************************************************************/
@@ -19,13 +19,14 @@ public:
 	Button(int, int x, int y, int width, int height, const std::string&);
 	Button(int, int x, int y, const std::string&);
 	Button(int, const std::string&);
+	virtual ~Button() = default;
 
 	// I can't possibly explain why Minecraft is referenced here
 	bool clicked(Minecraft*, int xPos, int yPos);
 	int  getYImage(bool bHovered);
 	void released(int xPos, int yPos);
-	void renderBg(Minecraft*, int, int);
-	void render(Minecraft*, int xPos, int yPos);
+	virtual void renderBg(Minecraft*, int, int);
+	virtual void render(Minecraft*, int xPos, int yPos);
 
 public:
 	int m_width = 0;
@@ -43,4 +44,3 @@ public:
 	int m_lastY = 0;
 #endif
 };
-
