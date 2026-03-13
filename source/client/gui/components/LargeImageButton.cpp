@@ -83,10 +83,12 @@ void LargeImageButton::render(Minecraft* minecraft, int mouseX, int mouseY)
 
             if (!m_imageDef.m_bFullTexture)
             {
+                int hoverOffsetY = hovered ? m_imageDef.m_uvHeight : 0;
+
                 float u0 = float(m_imageDef.m_u) / float(tex->m_width);
                 float u1 = float(m_imageDef.m_u + m_imageDef.m_uvWidth) / float(tex->m_width);
-                float v0 = float(m_imageDef.m_v) / float(tex->m_height);
-                float v1 = float(m_imageDef.m_v + m_imageDef.m_uvHeight) / float(tex->m_height);
+                float v0 = float(m_imageDef.m_v + hoverOffsetY) / float(tex->m_height);
+                float v1 = float(m_imageDef.m_v + hoverOffsetY + m_imageDef.m_uvHeight) / float(tex->m_height);
 
                 t.vertexUV(float(centerX - halfW), float(centerY - halfH), field_4, u0, v0);
                 t.vertexUV(float(centerX - halfW), float(centerY + halfH), field_4, u0, v1);
@@ -106,16 +108,16 @@ void LargeImageButton::render(Minecraft* minecraft, int mouseX, int mouseY)
     }
 
     int color;
+    int xText = m_xPos + m_width / 2 - 3;
     int yText = m_yPos + 11;
 
     if (!m_bEnabled)
         color = 0xFFA0A0A0;
-    else if (hovered || field_36)
+    else if (hovered)
         color = 0x00FFFFA0;
     else
         color = 0x00E0E0E0;
 
-    int xText = m_xPos + m_width / 2 - 3;
     drawCenteredString(
         minecraft->m_pFont,
         field_18,
