@@ -1,4 +1,5 @@
 # Minecraft PE 0.1.1 Recreation Project
+> Early work-in-progress recreation of Minecraft: Pocket Edition 0.1.1 alpha.
 
 **This project is NOT affiliated with Minecraft, Mojang AB, or Microsoft Corporation, and will never claim to be.**
 
